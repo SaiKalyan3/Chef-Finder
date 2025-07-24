@@ -12,3 +12,27 @@ window.onscroll = () => {
  
 }
 
+// Theme Switcher
+const themeToggle = document.getElementById('theme-toggle');
+const body = document.body;
+
+// Load theme from localStorage
+if (localStorage.getItem('theme') === 'dark') {
+    body.classList.add('dark-theme');
+    themeToggle.classList.remove('bx-moon');
+    themeToggle.classList.add('bx-sun');
+}
+
+themeToggle.onclick = function () {
+    body.classList.toggle('dark-theme');
+    if (body.classList.contains('dark-theme')) {
+        themeToggle.classList.remove('bx-moon');
+        themeToggle.classList.add('bx-sun');
+        localStorage.setItem('theme', 'dark');
+    } else {
+        themeToggle.classList.remove('bx-sun');
+        themeToggle.classList.add('bx-moon');
+        localStorage.setItem('theme', 'light');
+    }
+};
+

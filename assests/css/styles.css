@@ -1,3 +1,33 @@
+/* Theme Switcher: Dark Theme */
+body.dark-theme {
+  --main-color: #ffb347;
+  --text-color: #f1f1f1;
+  --bg-color: #23272f;
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+body.dark-theme header {
+  background: #23272f;
+}
+
+body.dark-theme .home,
+body.dark-theme section,
+body.dark-theme .services-container .box,
+body.dark-theme .chefs-container .chef-box,
+body.dark-theme .contact-form form {
+  background: #23272f;
+  color: var(--text-color);
+}
+
+body.dark-theme .navbar a:hover {
+  background: var(--main-color);
+  color: #23272f;
+}
+
+body.dark-theme .logo {
+  color: var(--main-color);
+}
 /* Google Fonts */
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
