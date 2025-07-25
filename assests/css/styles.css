@@ -54,7 +54,7 @@ body.dark-theme .logo {
 
 :root {
 
- --main-color: #f54744;
+ --main-color: #cc5607;
 
  --text-color: #2f2f2f;
 
@@ -232,7 +232,7 @@ header {
 
 .btn:hover {
 
- background: #fc5552;
+ background: #d6c102;
 
 }
 
@@ -284,9 +284,9 @@ header {
 
 .box img {
 
- width: 100px;
+ width: 300px;
 
- height: 100px;
+ height: 400x;
 
  object-fit: contain;
 
@@ -436,7 +436,7 @@ textarea {
 
 .contact-form form .contact-button:hover {
 
- background: #fc5552;
+ background: #d6c102;
 
 }
 
